@@ -7,6 +7,8 @@
      -> Input your dockerhub username and access token -> ID: input what you will use in jenkins file`
 
 ### Using Docker compose
-docker-compose exec mysql /bin/sh
-docker-compose exec app php /var/www/html/artisan migrate:fresh
-docker-composer run --rm artisan migrate:fresh
+
+`docker-compose up -d --build`
+`docker-compose run --rm composer install`
+`docker-compose run --rm artisan migrate:fresh`
+`docker-compose run --rm artisan migrate`
